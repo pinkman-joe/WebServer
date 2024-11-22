@@ -1,0 +1,735 @@
+2024-11-09 10:38:24.361899 [erro]: MySQL Error
+2024-11-09 10:48:04.746997 [info]: timer tick
+2024-11-09 10:48:06.736984 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:06.737084 [info]: adjust timer once
+2024-11-09 10:48:06.737254 [info]: GET / HTTP/1.1
+2024-11-09 10:48:06.737289 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:06.737324 [info]: Connection: keep-alive
+2024-11-09 10:48:06.737343 [info]: Cache-Control: max-age=0
+2024-11-09 10:48:06.737356 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 10:48:06.737366 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:06.737376 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:06.737386 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:06.737396 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:06.737405 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:06.737415 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:06.737537 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:06.737555 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:06.737565 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:06.737575 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:06.737586 [info]: 
+2024-11-09 10:48:06.737627 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:06.737658 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-11-09 10:48:06.737671 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-11-09 10:48:06.737681 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-11-09 10:48:06.738208 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:06.738417 [info]: adjust timer once
+2024-11-09 10:48:07.442637 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:07.442727 [info]: adjust timer once
+2024-11-09 10:48:07.442994 [info]: GET /favicon.ico HTTP/1.1
+2024-11-09 10:48:07.443304 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:07.443329 [info]: Connection: keep-alive
+2024-11-09 10:48:07.443342 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:07.443353 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:07.443488 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 10:48:07.443511 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 10:48:07.443563 [info]: Referer: http://192.168.31.100:9006/
+2024-11-09 10:48:07.443588 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/
+2024-11-09 10:48:07.443603 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:07.443613 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:07.443623 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:07.443633 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:07.443643 [info]: 
+2024-11-09 10:48:07.448550 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:07.448597 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+
+2024-11-09 10:48:07.448618 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+2024-11-09 10:48:07.448636 [info]: request:HTTP/1.1 200 OK
+Content-Length:4286
+Connection:keep-alive
+
+
+2024-11-09 10:48:07.449180 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:07.449231 [info]: adjust timer once
+2024-11-09 10:48:09.161901 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:09.161991 [info]: adjust timer once
+2024-11-09 10:48:09.162075 [info]: POST /0 HTTP/1.1
+2024-11-09 10:48:09.162091 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:09.162102 [info]: Connection: keep-alive
+2024-11-09 10:48:09.162113 [info]: Content-Length: 0
+2024-11-09 10:48:09.162124 [info]: Cache-Control: max-age=0
+2024-11-09 10:48:09.162132 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 10:48:09.162141 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:09.162148 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:09.162156 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:09.162164 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:09.162173 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:09.162182 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:09.162191 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:09.162199 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:09.162207 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:09.162215 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:09.162224 [info]: Referer: http://192.168.31.100:9006/
+2024-11-09 10:48:09.162233 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/
+2024-11-09 10:48:09.162241 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:09.162250 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:09.162259 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:09.162267 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:09.162275 [info]: 
+2024-11-09 10:48:09.162311 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:09.162329 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2024-11-09 10:48:09.162338 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+2024-11-09 10:48:09.162347 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+
+2024-11-09 10:48:09.162539 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:09.162559 [info]: adjust timer once
+2024-11-09 10:48:09.747466 [info]: timer tick
+2024-11-09 10:48:14.341231 [info]: close fd 17
+2024-11-09 10:48:14.341651 [info]: close fd 16
+2024-11-09 10:48:14.750450 [info]: timer tick
+2024-11-09 10:48:19.287863 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:19.287940 [info]: adjust timer once
+2024-11-09 10:48:19.288027 [info]: POST /3CGISQL.cgi HTTP/1.1
+2024-11-09 10:48:19.288059 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:19.288072 [info]: Connection: keep-alive
+2024-11-09 10:48:19.288079 [info]: Content-Length: 21
+2024-11-09 10:48:19.288089 [info]: Cache-Control: max-age=0
+2024-11-09 10:48:19.288099 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 10:48:19.288109 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:19.288119 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:19.288129 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:19.288142 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:19.288160 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:19.288198 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:19.288233 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:19.288244 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:19.288255 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:19.288264 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:19.288273 [info]: Referer: http://192.168.31.100:9006/0
+2024-11-09 10:48:19.288282 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/0
+2024-11-09 10:48:19.288290 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:19.288298 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:19.288307 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:19.288315 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:19.288366 [info]: 
+2024-11-09 10:48:19.288388 [info]: user=joe&password=123
+2024-11-09 10:48:19.291499 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:19.291592 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2024-11-09 10:48:19.291618 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+2024-11-09 10:48:19.291630 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+
+2024-11-09 10:48:19.292260 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:19.292318 [info]: adjust timer once
+2024-11-09 10:48:19.750657 [info]: timer tick
+2024-11-09 10:48:24.341988 [info]: close fd 17
+2024-11-09 10:48:24.342198 [info]: close fd 16
+2024-11-09 10:48:24.708637 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:24.708738 [info]: adjust timer once
+2024-11-09 10:48:24.708861 [info]: POST /2CGISQL.cgi HTTP/1.1
+2024-11-09 10:48:24.708975 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:24.708996 [info]: Connection: keep-alive
+2024-11-09 10:48:24.709007 [info]: Content-Length: 21
+2024-11-09 10:48:24.709018 [info]: Cache-Control: max-age=0
+2024-11-09 10:48:24.709029 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 10:48:24.709039 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:24.709049 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:24.709059 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:24.709069 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:24.709079 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:24.709088 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:24.709099 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:24.709111 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:24.709122 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:24.709132 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:24.709141 [info]: Referer: http://192.168.31.100:9006/3CGISQL.cgi
+2024-11-09 10:48:24.709151 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/3CGISQL.cgi
+2024-11-09 10:48:24.709162 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:24.709170 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:24.709179 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:24.709225 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:24.709298 [info]: 
+2024-11-09 10:48:24.709311 [info]: user=joe&password=123
+2024-11-09 10:48:24.709644 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:24.709713 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+
+2024-11-09 10:48:24.709735 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+2024-11-09 10:48:24.709747 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+
+2024-11-09 10:48:24.710048 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:24.710099 [info]: adjust timer once
+2024-11-09 10:48:24.751355 [info]: timer tick
+2024-11-09 10:48:29.751514 [info]: timer tick
+2024-11-09 10:48:29.996058 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:29.996150 [info]: adjust timer once
+2024-11-09 10:48:29.996239 [info]: POST /6 HTTP/1.1
+2024-11-09 10:48:29.996254 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:29.996263 [info]: Connection: keep-alive
+2024-11-09 10:48:29.996271 [info]: Content-Length: 0
+2024-11-09 10:48:29.996279 [info]: Cache-Control: max-age=0
+2024-11-09 10:48:29.996286 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 10:48:29.996293 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:29.996301 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 10:48:29.996308 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:29.996316 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 10:48:29.996323 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:29.996330 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 10:48:29.996337 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:29.996345 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:29.996352 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:29.996360 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 10:48:29.996367 [info]: Referer: http://192.168.31.100:9006/2CGISQL.cgi
+2024-11-09 10:48:29.996373 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/2CGISQL.cgi
+2024-11-09 10:48:29.996380 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:29.996387 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 10:48:29.996395 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:29.996402 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:29.996409 [info]: 
+2024-11-09 10:48:29.996443 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:29.996459 [info]: request:HTTP/1.1 200 OK
+Content-Length:381
+
+2024-11-09 10:48:29.996467 [info]: request:HTTP/1.1 200 OK
+Content-Length:381
+Connection:keep-alive
+
+2024-11-09 10:48:29.996474 [info]: request:HTTP/1.1 200 OK
+Content-Length:381
+Connection:keep-alive
+
+
+2024-11-09 10:48:29.996631 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:29.996663 [info]: adjust timer once
+2024-11-09 10:48:30.161388 [info]: deal with the client(192.168.31.233)
+2024-11-09 10:48:30.161491 [info]: adjust timer once
+2024-11-09 10:48:30.161554 [info]: GET /xxx.mp4 HTTP/1.1
+2024-11-09 10:48:30.161567 [info]: Host: 192.168.31.100:9006
+2024-11-09 10:48:30.161574 [info]: Connection: keep-alive
+2024-11-09 10:48:30.161579 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:30.161592 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 10:48:30.161597 [info]: Accept-Encoding: identity;q=1, *;q=0
+2024-11-09 10:48:30.161602 [info]: oop!unknow header: Accept-Encoding: identity;q=1, *;q=0
+2024-11-09 10:48:30.161607 [info]: Accept: */*
+2024-11-09 10:48:30.161612 [info]: oop!unknow header: Accept: */*
+2024-11-09 10:48:30.161617 [info]: Referer: http://192.168.31.100:9006/6
+2024-11-09 10:48:30.161622 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/6
+2024-11-09 10:48:30.161626 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:30.161631 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 10:48:30.161636 [info]: Range: bytes=0-
+2024-11-09 10:48:30.161690 [info]: oop!unknow header: Range: bytes=0-
+2024-11-09 10:48:30.161698 [info]: 
+2024-11-09 10:48:30.161735 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 10:48:30.161754 [info]: request:HTTP/1.1 200 OK
+Content-Length:39667571
+
+2024-11-09 10:48:30.161762 [info]: request:HTTP/1.1 200 OK
+Content-Length:39667571
+Connection:keep-alive
+
+2024-11-09 10:48:30.161769 [info]: request:HTTP/1.1 200 OK
+Content-Length:39667571
+Connection:keep-alive
+
+
+2024-11-09 10:48:30.499626 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:30.499670 [info]: adjust timer once
+2024-11-09 10:48:34.346140 [info]: close fd 17
+2024-11-09 10:48:34.752640 [info]: timer tick
+2024-11-09 10:48:35.118605 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.118666 [info]: adjust timer once
+2024-11-09 10:48:35.254996 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.255107 [info]: adjust timer once
+2024-11-09 10:48:35.347970 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.348338 [info]: adjust timer once
+2024-11-09 10:48:35.484778 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.484965 [info]: adjust timer once
+2024-11-09 10:48:35.602637 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.602992 [info]: adjust timer once
+2024-11-09 10:48:35.656503 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:35.656663 [info]: adjust timer once
+2024-11-09 10:48:36.176441 [info]: send data to the client(192.168.31.233)
+2024-11-09 10:48:36.176485 [info]: adjust timer once
+2024-11-09 10:48:39.752896 [info]: timer tick
+2024-11-09 10:48:44.358944 [info]: close fd 16
+2024-11-09 10:48:44.753124 [info]: timer tick
+2024-11-09 10:48:49.753657 [info]: timer tick
+2024-11-09 10:48:54.753874 [info]: timer tick
+2024-11-09 10:48:59.754189 [info]: timer tick
+2024-11-09 11:09:54.689224 [info]: timer tick
+2024-11-09 11:09:59.689668 [info]: timer tick
+2024-11-09 11:10:04.689927 [info]: timer tick
+2024-11-09 11:10:09.689979 [info]: timer tick
+2024-11-09 11:10:11.428767 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:10:11.428928 [info]: adjust timer once
+2024-11-09 11:10:11.428974 [info]: GET / HTTP/1.1
+2024-11-09 11:10:11.429009 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:10:11.429026 [info]: Connection: keep-alive
+2024-11-09 11:10:11.429042 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:10:11.429061 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:10:11.429075 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:10:11.429086 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:10:11.429097 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:10:11.429106 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:10:11.429127 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:10:11.429137 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:10:11.429147 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:10:11.429155 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:10:11.429163 [info]: 
+2024-11-09 11:10:11.429198 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:10:11.429226 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-11-09 11:10:11.429239 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-11-09 11:10:11.429250 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-11-09 11:10:11.429608 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:10:11.429720 [info]: adjust timer once
+2024-11-09 11:10:14.690991 [info]: timer tick
+2024-11-09 11:10:16.099675 [info]: close fd 17
+2024-11-09 11:10:16.100508 [info]: close fd 16
+2024-11-09 11:10:19.691078 [info]: timer tick
+2024-11-09 11:10:24.692007 [info]: timer tick
+2024-11-09 11:10:29.692144 [info]: timer tick
+2024-11-09 11:10:34.692303 [info]: timer tick
+2024-11-09 11:10:39.692604 [info]: timer tick
+2024-11-09 11:10:44.692798 [info]: timer tick
+2024-11-09 11:10:49.693489 [info]: timer tick
+2024-11-09 11:10:50.773392 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:10:50.773522 [info]: adjust timer once
+2024-11-09 11:10:50.775845 [info]: GET / HTTP/1.1
+2024-11-09 11:10:50.776442 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:10:50.776484 [info]: Connection: keep-alive
+2024-11-09 11:10:50.776497 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:10:50.776508 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:10:50.776519 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:10:50.776531 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:10:50.776567 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:10:50.776581 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:10:50.776632 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:10:50.776657 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:10:50.776674 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:10:50.777149 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:10:50.777186 [info]: 
+2024-11-09 11:10:50.777246 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:10:50.777281 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-11-09 11:10:50.777294 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-11-09 11:10:50.777304 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-11-09 11:10:50.778108 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:10:50.778197 [info]: adjust timer once
+2024-11-09 11:10:51.123472 [info]: close fd 17
+2024-11-09 11:10:51.124096 [info]: close fd 16
+2024-11-09 11:10:54.694222 [info]: timer tick
+2024-11-09 11:10:59.694738 [info]: timer tick
+2024-11-09 11:11:04.694821 [info]: timer tick
+2024-11-09 11:11:09.695283 [info]: timer tick
+2024-11-09 11:11:14.695413 [info]: timer tick
+2024-11-09 11:11:19.696112 [info]: timer tick
+2024-11-09 11:11:24.696458 [info]: timer tick
+2024-11-09 11:11:29.697456 [info]: timer tick
+2024-11-09 11:11:34.698306 [info]: timer tick
+2024-11-09 11:11:39.698776 [info]: timer tick
+2024-11-09 11:11:44.698952 [info]: timer tick
+2024-11-09 11:11:49.699036 [info]: timer tick
+2024-11-09 11:11:54.715524 [info]: timer tick
+2024-11-09 11:11:59.716024 [info]: timer tick
+2024-11-09 11:12:04.716493 [info]: timer tick
+2024-11-09 11:12:09.716732 [info]: timer tick
+2024-11-09 11:12:14.717150 [info]: timer tick
+2024-11-09 11:12:19.717760 [info]: timer tick
+2024-11-09 11:12:23.261164 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:12:23.261274 [info]: adjust timer once
+2024-11-09 11:12:23.261422 [info]: POST /0 HTTP/1.1
+2024-11-09 11:12:23.261485 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:12:23.261503 [info]: Connection: keep-alive
+2024-11-09 11:12:23.261515 [info]: Content-Length: 0
+2024-11-09 11:12:23.261525 [info]: Cache-Control: max-age=0
+2024-11-09 11:12:23.261535 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 11:12:23.261545 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:23.261554 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:23.261564 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:23.261574 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:23.261584 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:23.261595 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:23.261606 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:23.261617 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:23.261628 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:23.261639 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:23.261650 [info]: Referer: http://192.168.31.100:9006/
+2024-11-09 11:12:23.261660 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/
+2024-11-09 11:12:23.261671 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:23.261681 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:23.261692 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:23.261702 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:23.261712 [info]: 
+2024-11-09 11:12:23.261755 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:12:23.261779 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+
+2024-11-09 11:12:23.261790 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+2024-11-09 11:12:23.261800 [info]: request:HTTP/1.1 200 OK
+Content-Length:724
+Connection:keep-alive
+
+
+2024-11-09 11:12:23.262154 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:12:23.262204 [info]: adjust timer once
+2024-11-09 11:12:24.718203 [info]: timer tick
+2024-11-09 11:12:29.718424 [info]: timer tick
+2024-11-09 11:12:31.224054 [info]: close fd 17
+2024-11-09 11:12:31.224314 [info]: close fd 16
+2024-11-09 11:12:31.977121 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:12:31.977223 [info]: adjust timer once
+2024-11-09 11:12:31.977342 [info]: POST /3CGISQL.cgi HTTP/1.1
+2024-11-09 11:12:31.977370 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:12:31.977378 [info]: Connection: keep-alive
+2024-11-09 11:12:31.977385 [info]: Content-Length: 21
+2024-11-09 11:12:31.977393 [info]: Cache-Control: max-age=0
+2024-11-09 11:12:31.977401 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 11:12:31.977409 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:31.977417 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:31.977425 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:31.977433 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:31.977453 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:31.977461 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:31.977471 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:31.977482 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:31.977490 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:31.977501 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:31.977507 [info]: Referer: http://192.168.31.100:9006/0
+2024-11-09 11:12:31.977512 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/0
+2024-11-09 11:12:31.977516 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:31.977521 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:31.977525 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:31.977530 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:31.977534 [info]: 
+2024-11-09 11:12:31.977539 [info]: user=joe&password=123
+2024-11-09 11:12:31.977574 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:12:31.977590 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+
+2024-11-09 11:12:31.977595 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+Connection:keep-alive
+
+2024-11-09 11:12:31.977599 [info]: request:HTTP/1.1 200 OK
+Content-Length:786
+Connection:keep-alive
+
+
+2024-11-09 11:12:31.977764 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:12:31.977800 [info]: adjust timer once
+2024-11-09 11:12:34.718651 [info]: timer tick
+2024-11-09 11:12:39.718855 [info]: timer tick
+2024-11-09 11:12:41.239373 [info]: close fd 17
+2024-11-09 11:12:41.239640 [info]: close fd 16
+2024-11-09 11:12:41.986039 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:12:41.986126 [info]: adjust timer once
+2024-11-09 11:12:41.986199 [info]: GET / HTTP/1.1
+2024-11-09 11:12:41.986213 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:12:41.986221 [info]: Connection: keep-alive
+2024-11-09 11:12:41.986229 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:41.986235 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:41.986242 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:41.986250 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:41.986257 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:41.986264 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:41.986270 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:41.986277 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:41.986284 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:41.986291 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:41.986298 [info]: 
+2024-11-09 11:12:41.986327 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:12:41.986346 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-11-09 11:12:41.986354 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-11-09 11:12:41.986361 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-11-09 11:12:41.986521 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:12:41.986538 [info]: adjust timer once
+2024-11-09 11:12:43.897575 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:12:43.897655 [info]: adjust timer once
+2024-11-09 11:12:43.897984 [info]: POST /1 HTTP/1.1
+2024-11-09 11:12:43.898013 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:12:43.898023 [info]: Connection: keep-alive
+2024-11-09 11:12:43.898031 [info]: Content-Length: 0
+2024-11-09 11:12:43.898038 [info]: Cache-Control: max-age=0
+2024-11-09 11:12:43.898046 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 11:12:43.898053 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:43.898060 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:43.898067 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:43.898074 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:43.898082 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:43.898090 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:43.898098 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:43.898106 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:43.898113 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:43.898119 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:43.898178 [info]: Referer: http://192.168.31.100:9006/
+2024-11-09 11:12:43.898190 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/
+2024-11-09 11:12:43.898199 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:43.898207 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:43.898258 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:43.898273 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:43.898279 [info]: 
+2024-11-09 11:12:43.898306 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:12:43.898319 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+
+2024-11-09 11:12:43.898324 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+2024-11-09 11:12:43.898329 [info]: request:HTTP/1.1 200 OK
+Content-Length:725
+Connection:keep-alive
+
+
+2024-11-09 11:12:43.898557 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:12:43.898585 [info]: adjust timer once
+2024-11-09 11:12:44.719439 [info]: timer tick
+2024-11-09 11:12:49.719979 [info]: timer tick
+2024-11-09 11:12:51.244398 [info]: close fd 17
+2024-11-09 11:12:51.244772 [info]: close fd 16
+2024-11-09 11:12:52.706655 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:12:52.706735 [info]: adjust timer once
+2024-11-09 11:12:52.706797 [info]: POST /2CGISQL.cgi HTTP/1.1
+2024-11-09 11:12:52.706808 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:12:52.706815 [info]: Connection: keep-alive
+2024-11-09 11:12:52.706822 [info]: Content-Length: 21
+2024-11-09 11:12:52.706829 [info]: Cache-Control: max-age=0
+2024-11-09 11:12:52.706835 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 11:12:52.706841 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:52.706848 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 11:12:52.706854 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:52.706860 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:12:52.706866 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:52.706872 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:12:52.706887 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:52.706893 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:12:52.706899 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:52.706904 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:12:52.706909 [info]: Referer: http://192.168.31.100:9006/1
+2024-11-09 11:12:52.706914 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/1
+2024-11-09 11:12:52.706919 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:52.706924 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:12:52.706929 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:52.706934 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:12:52.706939 [info]: 
+2024-11-09 11:12:52.706944 [info]: user=joe&password=123
+2024-11-09 11:12:52.706972 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:12:52.706983 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+
+2024-11-09 11:12:52.706988 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+2024-11-09 11:12:52.706993 [info]: request:HTTP/1.1 200 OK
+Content-Length:723
+Connection:keep-alive
+
+
+2024-11-09 11:12:52.707188 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:12:52.707220 [info]: adjust timer once
+2024-11-09 11:12:54.720212 [info]: timer tick
+2024-11-09 11:12:59.720546 [info]: timer tick
+2024-11-09 11:13:01.266567 [info]: close fd 17
+2024-11-09 11:13:01.267023 [info]: close fd 16
+2024-11-09 11:13:04.720908 [info]: timer tick
+2024-11-09 11:13:08.009509 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:13:08.009634 [info]: adjust timer once
+2024-11-09 11:13:08.009795 [info]: POST /5 HTTP/1.1
+2024-11-09 11:13:08.009820 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:13:08.009833 [info]: Connection: keep-alive
+2024-11-09 11:13:08.009845 [info]: Content-Length: 0
+2024-11-09 11:13:08.009857 [info]: Cache-Control: max-age=0
+2024-11-09 11:13:08.009872 [info]: oop!unknow header: Cache-Control: max-age=0
+2024-11-09 11:13:08.009885 [info]: Origin: http://192.168.31.100:9006
+2024-11-09 11:13:08.009895 [info]: oop!unknow header: Origin: http://192.168.31.100:9006
+2024-11-09 11:13:08.009905 [info]: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:13:08.009916 [info]: oop!unknow header: Content-Type: application/x-www-form-urlencoded
+2024-11-09 11:13:08.009931 [info]: Upgrade-Insecure-Requests: 1
+2024-11-09 11:13:08.009943 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-09 11:13:08.009953 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.009969 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.009979 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:13:08.009988 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-09 11:13:08.009997 [info]: Referer: http://192.168.31.100:9006/2CGISQL.cgi
+2024-11-09 11:13:08.010011 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/2CGISQL.cgi
+2024-11-09 11:13:08.010022 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.010031 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.010236 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.010255 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.010267 [info]: 
+2024-11-09 11:13:08.010317 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:13:08.010342 [info]: request:HTTP/1.1 200 OK
+Content-Length:360
+
+2024-11-09 11:13:08.010352 [info]: request:HTTP/1.1 200 OK
+Content-Length:360
+Connection:keep-alive
+
+2024-11-09 11:13:08.010362 [info]: request:HTTP/1.1 200 OK
+Content-Length:360
+Connection:keep-alive
+
+
+2024-11-09 11:13:08.010623 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.010655 [info]: adjust timer once
+2024-11-09 11:13:08.061207 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:13:08.061299 [info]: adjust timer once
+2024-11-09 11:13:08.061331 [info]: GET /xxx.jpg HTTP/1.1
+2024-11-09 11:13:08.061344 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:13:08.061353 [info]: Connection: keep-alive
+2024-11-09 11:13:08.061362 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.061371 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.061379 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 11:13:08.061388 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 11:13:08.061396 [info]: Referer: http://192.168.31.100:9006/5
+2024-11-09 11:13:08.061404 [info]: oop!unknow header: Referer: http://192.168.31.100:9006/5
+2024-11-09 11:13:08.061464 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.061537 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.061555 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.061565 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.061574 [info]: 
+2024-11-09 11:13:08.061622 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:13:08.061636 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+
+2024-11-09 11:13:08.061646 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+2024-11-09 11:13:08.061656 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+
+2024-11-09 11:13:08.063332 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.063660 [info]: adjust timer once
+2024-11-09 11:13:08.069026 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.069103 [info]: adjust timer once
+2024-11-09 11:13:08.073719 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.073892 [info]: adjust timer once
+2024-11-09 11:13:08.085569 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.085640 [info]: adjust timer once
+2024-11-09 11:13:08.094034 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.094194 [info]: adjust timer once
+2024-11-09 11:13:08.218374 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.218445 [info]: adjust timer once
+2024-11-09 11:13:08.368952 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.369041 [info]: adjust timer once
+2024-11-09 11:13:08.651564 [info]: deal with the client(192.168.31.233)
+2024-11-09 11:13:08.651660 [info]: adjust timer once
+2024-11-09 11:13:08.651735 [info]: GET /xxx.jpg HTTP/1.1
+2024-11-09 11:13:08.651758 [info]: Host: 192.168.31.100:9006
+2024-11-09 11:13:08.651774 [info]: Connection: keep-alive
+2024-11-09 11:13:08.651787 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.651798 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0
+2024-11-09 11:13:08.651820 [info]: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 11:13:08.651828 [info]: oop!unknow header: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2024-11-09 11:13:08.651837 [info]: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.651845 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-09 11:13:08.651854 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.651862 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-09 11:13:08.651870 [info]: 
+2024-11-09 11:13:08.651992 [info]: request:HTTP/1.1 200 OK
+
+2024-11-09 11:13:08.652024 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+
+2024-11-09 11:13:08.652034 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+2024-11-09 11:13:08.652040 [info]: request:HTTP/1.1 200 OK
+Content-Length:6007312
+Connection:keep-alive
+
+
+2024-11-09 11:13:08.840633 [info]: send data to the client(192.168.31.233)
+2024-11-09 11:13:08.840703 [info]: adjust timer once
+2024-11-09 11:13:09.721310 [info]: timer tick
+2024-11-09 11:13:11.273851 [info]: close fd 18
+2024-11-09 11:13:11.274555 [info]: close fd 17
+2024-11-09 11:13:11.274726 [info]: close fd 16
+2024-11-09 11:13:14.722151 [info]: timer tick
+2024-11-09 11:13:19.722511 [info]: timer tick
+2024-11-09 11:13:24.722842 [info]: timer tick
+2024-11-09 11:13:29.723336 [info]: timer tick

@@ -37,6 +37,8 @@ void sort_timer_lst::add_timer(util_timer *timer)
     }
     add_timer(timer, head);
 }
+
+//定时器延长时调整位置保持升序
 void sort_timer_lst::adjust_timer(util_timer *timer)
 {
     if (!timer)
@@ -62,6 +64,7 @@ void sort_timer_lst::adjust_timer(util_timer *timer)
         add_timer(timer, timer->next);
     }
 }
+//删除定时器节点
 void sort_timer_lst::del_timer(util_timer *timer)
 {
     if (!timer)
@@ -93,6 +96,8 @@ void sort_timer_lst::del_timer(util_timer *timer)
     timer->next->prev = timer->prev;
     delete timer;
 }
+
+//SIGALRM触发时调用处理到期任务
 void sort_timer_lst::tick()
 {
     if (!head)
@@ -100,15 +105,17 @@ void sort_timer_lst::tick()
         return;
     }
     
-    time_t cur = time(NULL);
+    time_t cur = time(NULL);//获取系统时间
     util_timer *tmp = head;
+    //处理每个定时器，直到遇见一个尚未到期的定时器，因为是升序，所以后面的都未超时
     while (tmp)
     {
+        //因为超时值是绝对时间，所以可以和系统时间比较
         if (cur < tmp->expire)
         {
             break;
         }
-        tmp->cb_func(tmp->user_data);
+        tmp->cb_func(tmp->user_data);//调用回调函数处理数据
         head = tmp->next;
         if (head)
         {
@@ -119,6 +126,7 @@ void sort_timer_lst::tick()
     }
 }
 
+//将定时器timer加到lst_head后面合适的位置
 void sort_timer_lst::add_timer(util_timer *timer, util_timer *lst_head)
 {
     util_timer *prev = lst_head;
@@ -166,14 +174,15 @@ void Utils::addfd(int epollfd, int fd, bool one_shot, int TRIGMode)
     event.data.fd = fd;
 
     if (1 == TRIGMode)
-        event.events = EPOLLIN | EPOLLET | EPOLLRDHUP;
-    else
+        //数据可读/  /TCP连接被对方关闭或对方关闭了写操作
+        event.events = EPOLLIN | EPOLLET | EPOLLRDHUP;//EPOLLET表示使用边缘触发模式
+    else//默认
         event.events = EPOLLIN | EPOLLRDHUP;
 
     if (one_shot)
-        event.events |= EPOLLONESHOT;
-    epoll_ctl(epollfd, EPOLL_CTL_ADD, fd, &event);
-    setnonblocking(fd);
+        event.events |= EPOLLONESHOT;//避免某个事件多次触发
+    epoll_ctl(epollfd, EPOLL_CTL_ADD, fd, &event);//往事件表中注册fd上的事件
+    setnonblocking(fd); //ET模式必须是非阻塞的
 }
 
 //信号处理函数

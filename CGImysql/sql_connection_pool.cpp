@@ -18,7 +18,7 @@ connection_pool::connection_pool()
 
 connection_pool *connection_pool::GetInstance()
 {
-	static connection_pool connPool;
+	static connection_pool connPool; //单例模式，保证只有一个池
 	return &connPool;
 }
 
@@ -30,7 +30,7 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
 	m_User = User;
 	m_PassWord = PassWord;
 	m_DatabaseName = DBName;
-	m_close_log = close_log;
+	m_close_log = close_log; //日志开关
 
 	for (int i = 0; i < MaxConn; i++)
 	{
@@ -53,7 +53,7 @@ void connection_pool::init(string url, string User, string PassWord, string DBNa
 		++m_FreeConn;
 	}
 
-	reserve = sem(m_FreeConn);
+	reserve = sem(m_FreeConn); //初始化值为m_FreeConn的信号量
 
 	m_MaxConn = m_FreeConn;
 }
@@ -132,7 +132,7 @@ connection_pool::~connection_pool()
 }
 
 connectionRAII::connectionRAII(MYSQL **SQL, connection_pool *connPool){
-	*SQL = connPool->GetConnection();
+	*SQL = connPool->GetConnection(); //从线程池获取一个数据库
 	
 	conRAII = *SQL;
 	poolRAII = connPool;

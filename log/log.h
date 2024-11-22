@@ -14,12 +14,12 @@ class Log
 {
 public:
     //C++11以后,使用局部变量懒汉不用加锁
-    static Log *get_instance()
+    static Log *get_instance() //单例模式
     {
-        static Log instance;
+        static Log instance; //局部静态变量，只有在第一次调用时创建
         return &instance;
     }
-
+    //异步日志写日志线程的回调函数
     static void *flush_log_thread(void *args)
     {
         Log::get_instance()->async_write_log();
@@ -34,6 +34,7 @@ public:
 private:
     Log();
     virtual ~Log();
+    //从阻塞队列中取出日志条目并将其写入日志文件。
     void *async_write_log()
     {
         string single_log;
@@ -54,7 +55,7 @@ private:
     long long m_count;  //日志行数记录
     int m_today;        //因为按天分类,记录当前时间是那一天
     FILE *m_fp;         //打开log的文件指针
-    char *m_buf;
+    char *m_buf;        //动态分配日志缓冲区，初始置为空字符
     block_queue<string> *m_log_queue; //阻塞队列
     bool m_is_async;                  //是否同步标志位
     locker m_mutex;

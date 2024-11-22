@@ -22,28 +22,30 @@ Log::~Log()
 //异步需要设置阻塞队列的长度，同步不需要设置
 bool Log::init(const char *file_name, int close_log, int log_buf_size, int split_lines, int max_queue_size)
 {
+    /*日志内容被写入内存缓冲区，由一个单独的线程负责将日志批量写入日志文件。
+    同步日志在记录日志时，日志内容会立即写入日志文件。*/
     //如果设置了max_queue_size,则设置为异步
     if (max_queue_size >= 1)
     {
         m_is_async = true;
         m_log_queue = new block_queue<string>(max_queue_size);
         pthread_t tid;
-        //flush_log_thread为回调函数,这里表示创建线程异步写日志
+        //flush_log_thread为回调函数,作用是实现将缓冲区数据写入日志文件。
         pthread_create(&tid, NULL, flush_log_thread, NULL);
     }
     
     m_close_log = close_log;
     m_log_buf_size = log_buf_size;
-    m_buf = new char[m_log_buf_size];
+    m_buf = new char[m_log_buf_size]; 
     memset(m_buf, '\0', m_log_buf_size);
-    m_split_lines = split_lines;
+    m_split_lines = split_lines; //最大行数，超过就创建新的日志文件
 
     time_t t = time(NULL);
-    struct tm *sys_tm = localtime(&t);
+    struct tm *sys_tm = localtime(&t); //获取时间
     struct tm my_tm = *sys_tm;
 
  
-    const char *p = strrchr(file_name, '/');
+    const char *p = strrchr(file_name, '/'); //查找路径最后一次出现'/'的位置
     char log_full_name[256] = {0};
 
     if (p == NULL)
@@ -52,8 +54,8 @@ bool Log::init(const char *file_name, int close_log, int log_buf_size, int split
     }
     else
     {
-        strcpy(log_name, p + 1);
-        strncpy(dir_name, file_name, p - file_name + 1);
+        strcpy(log_name, p + 1); //复制文件名ServerLog
+        strncpy(dir_name, file_name, p - file_name + 1); //复制除ServerLog外前面部分的路径名
         snprintf(log_full_name, 255, "%s%d_%02d_%02d_%s", dir_name, my_tm.tm_year + 1900, my_tm.tm_mon + 1, my_tm.tm_mday, log_name);
     }
 

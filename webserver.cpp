@@ -6,12 +6,12 @@ WebServer::WebServer()
     users = new http_conn[MAX_FD];
 
     //root文件夹路径
-    char server_path[200];
-    getcwd(server_path, 200);
-    char root[6] = "/root";
+    char server_path[200]; 
+    getcwd(server_path, 200);//获取当前工作路径/home/ljh/Git/TinyWebServer
+    char root[6] = "/root"; 
     m_root = (char *)malloc(strlen(server_path) + strlen(root) + 1);
     strcpy(m_root, server_path);
-    strcat(m_root, root);
+    strcat(m_root, root); //拼接路径  /home/ljh/Git/TinyWebServer/root，里面存储有网页页面信息
 
     //定时器
     users_timer = new client_data[MAX_FD];
@@ -31,17 +31,17 @@ WebServer::~WebServer()
 void WebServer::init(int port, string user, string passWord, string databaseName, int log_write, 
                      int opt_linger, int trigmode, int sql_num, int thread_num, int close_log, int actor_model)
 {
-    m_port = port;
-    m_user = user;
-    m_passWord = passWord;
-    m_databaseName = databaseName;
-    m_sql_num = sql_num;
-    m_thread_num = thread_num;
-    m_log_write = log_write;
-    m_OPT_LINGER = opt_linger;
-    m_TRIGMode = trigmode;
-    m_close_log = close_log;
-    m_actormodel = actor_model;
+    m_port = port; //端口，默认9006
+    m_user = user; //数据库用户名
+    m_passWord = passWord; //数据库密码
+    m_databaseName = databaseName; //数据库名字
+    m_sql_num = sql_num; //数据库连接池数量
+    m_thread_num = thread_num; //线程池内的线程数量
+    m_log_write = log_write; //日志写入方式
+    m_OPT_LINGER = opt_linger; //优雅关闭连接
+    m_TRIGMode = trigmode; //0触发组合模式
+    m_close_log = close_log; //是否关闭日志
+    m_actormodel = actor_model; //并发模型选择
 }
 
 void WebServer::trig_mode()
@@ -74,20 +74,20 @@ void WebServer::trig_mode()
 
 void WebServer::log_write()
 {
-    if (0 == m_close_log)
+    if (0 == m_close_log)//开启日志
     {
         //初始化日志
         if (1 == m_log_write)
-            Log::get_instance()->init("./ServerLog", m_close_log, 2000, 800000, 800);
+            Log::get_instance()->init("./ServerLog", m_close_log, 2000, 800000, 800); //异步
         else
-            Log::get_instance()->init("./ServerLog", m_close_log, 2000, 800000, 0);
+            Log::get_instance()->init("./ServerLog", m_close_log, 2000, 800000, 0); //同步，创建日志文件并定义为可写
     }
 }
 
 void WebServer::sql_pool()
 {
     //初始化数据库连接池
-    m_connPool = connection_pool::GetInstance();
+    m_connPool = connection_pool::GetInstance(); //获取数据库连接池实例
     m_connPool->init("localhost", m_user, m_passWord, m_databaseName, 3306, m_sql_num, m_close_log);
 
     //初始化数据库读取表
@@ -107,13 +107,14 @@ void WebServer::eventListen()
     assert(m_listenfd >= 0);
 
     //优雅关闭连接
-    if (0 == m_OPT_LINGER)
+    if (0 == m_OPT_LINGER) //SO_LINGER不起作用，close使用默认行为
     {
         struct linger tmp = {0, 1};
         setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     }
     else if (1 == m_OPT_LINGER)
     {
+        //若socket是阻塞的，close将等待L_kinger时间；是非阻塞的则close立即返回
         struct linger tmp = {1, 1};
         setsockopt(m_listenfd, SOL_SOCKET, SO_LINGER, &tmp, sizeof(tmp));
     }
@@ -123,16 +124,16 @@ void WebServer::eventListen()
     bzero(&address, sizeof(address));
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = htonl(INADDR_ANY);
-    address.sin_port = htons(m_port);
+    address.sin_port = htons(m_port); //服务器默认端口9006
 
     int flag = 1;
-    setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
-    ret = bind(m_listenfd, (struct sockaddr *)&address, sizeof(address));
+    setsockopt(m_listenfd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag)); //SO_REUSEADDR重用本地地址
+    ret = bind(m_listenfd, (struct sockaddr *)&address, sizeof(address)); //绑定socket和地址
     assert(ret >= 0);
-    ret = listen(m_listenfd, 5);
+    ret = listen(m_listenfd, 5); //允许最多 5 个等待连接的客户端
     assert(ret >= 0);
 
-    utils.init(TIMESLOT);
+    utils.init(TIMESLOT); //初始化定时器，将会用于连接超时管理
 
     //epoll创建内核事件表
     epoll_event events[MAX_EVENT_NUMBER];
@@ -201,7 +202,7 @@ bool WebServer::dealclientdata()
 {
     struct sockaddr_in client_address;
     socklen_t client_addrlength = sizeof(client_address);
-    if (0 == m_LISTENTrigmode)
+    if (0 == m_LISTENTrigmode) //水平触发
     {
         int connfd = accept(m_listenfd, (struct sockaddr *)&client_address, &client_addrlength);
         if (connfd < 0)
@@ -218,7 +219,7 @@ bool WebServer::dealclientdata()
         timer(connfd, client_address);
     }
 
-    else
+    else //边缘触发
     {
         while (1)
         {
@@ -381,6 +382,7 @@ void WebServer::eventLoop()
 
     while (!stop_server)
     {
+        //将就绪的事件从m_epollfd复制到events中
         int number = epoll_wait(m_epollfd, events, MAX_EVENT_NUMBER, -1);
         if (number < 0 && errno != EINTR)
         {
@@ -390,7 +392,7 @@ void WebServer::eventLoop()
 
         for (int i = 0; i < number; i++)
         {
-            int sockfd = events[i].data.fd;
+            int sockfd = events[i].data.fd;//就绪的socket文件描述符
 
             //处理新到的客户连接
             if (sockfd == m_listenfd)

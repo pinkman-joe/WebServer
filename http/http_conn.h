@@ -44,23 +44,26 @@ public:
         CONNECT,
         PATH
     };
+    //主状态机的状态，表示正在解析请求行、正在解析头部字段
     enum CHECK_STATE
     {
-        CHECK_STATE_REQUESTLINE = 0,
-        CHECK_STATE_HEADER,
-        CHECK_STATE_CONTENT
+        CHECK_STATE_REQUESTLINE = 0, //解析请求行
+        CHECK_STATE_HEADER, //解析请求头
+        CHECK_STATE_CONTENT //消息体有内容
     };
+    //服务器处理http请求的结果
     enum HTTP_CODE
     {
-        NO_REQUEST,
-        GET_REQUEST,
-        BAD_REQUEST,
+        NO_REQUEST, //请求不完整，需要继续读取客户数据
+        GET_REQUEST, //获得一个完整的客户请求
+        BAD_REQUEST, //客户请求有语法错误
         NO_RESOURCE,
-        FORBIDDEN_REQUEST,
+        FORBIDDEN_REQUEST, //客户对资源没有访问权限
         FILE_REQUEST,
-        INTERNAL_ERROR,
-        CLOSED_CONNECTION
+        INTERNAL_ERROR, //服务器内部错误
+        CLOSED_CONNECTION //客户端已关闭连接
     };
+    //从状态机的状态，读取到完整的行、行出错、行数据部完整
     enum LINE_STATUS
     {
         LINE_OK = 0,
@@ -82,14 +85,14 @@ public:
     {
         return &m_address;
     }
-    void initmysql_result(connection_pool *connPool);
+    void initmysql_result(connection_pool *connPool); //查询用户名密码
     int timer_flag;
     int improv;
 
 
 private:
     void init();
-    HTTP_CODE process_read();
+    HTTP_CODE process_read(); //根据数据区不同的内容和状态机桩体执行不同操作
     bool process_write(HTTP_CODE ret);
     HTTP_CODE parse_request_line(char *text);
     HTTP_CODE parse_headers(char *text);
@@ -117,18 +120,18 @@ private:
     int m_sockfd;
     sockaddr_in m_address;
     char m_read_buf[READ_BUFFER_SIZE];
-    long m_read_idx;
-    long m_checked_idx;
-    int m_start_line;
+    long m_read_idx; //指向buffer中客户数据的尾部的下一字节
+    long m_checked_idx; //指向buffer（应用程序的读缓冲区）中正在解析的字节
+    int m_start_line; //当前行在缓冲区中的起始索引
     char m_write_buf[WRITE_BUFFER_SIZE];
     int m_write_idx;
     CHECK_STATE m_check_state;
     METHOD m_method;
-    char m_real_file[FILENAME_LEN];
+    char m_real_file[FILENAME_LEN];//文件路径
     char *m_url;
     char *m_version;
-    char *m_host;
-    long m_content_length;
+    char *m_host; //主机地址
+    long m_content_length; //请求行消息体长度
     bool m_linger;
     char *m_file_address;
     struct stat m_file_stat;
@@ -138,7 +141,7 @@ private:
     char *m_string; //存储请求头数据
     int bytes_to_send;
     int bytes_have_send;
-    char *doc_root;
+    char *doc_root; //根目录/home/ljh/Git/TinyWebServer
 
     map<string, string> m_users;
     int m_TRIGMode;

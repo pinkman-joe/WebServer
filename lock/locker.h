@@ -5,6 +5,7 @@
 #include <pthread.h>
 #include <semaphore.h>
 
+//信号量
 class sem
 {
 public:
@@ -38,6 +39,9 @@ public:
 private:
     sem_t m_sem;
 };
+
+
+//互斥锁
 class locker
 {
 public:
@@ -68,6 +72,8 @@ public:
 private:
     pthread_mutex_t m_mutex;
 };
+
+//条件变量
 class cond
 {
 public:
@@ -83,6 +89,7 @@ public:
     {
         pthread_cond_destroy(&m_cond);
     }
+    //等待目标条件变量
     bool wait(pthread_mutex_t *m_mutex)
     {
         int ret = 0;
@@ -103,8 +110,10 @@ public:
     {
         return pthread_cond_signal(&m_cond) == 0;
     }
+    //唤醒所有等待目标条件变量的线程
     bool broadcast()
     {
+        //谁被唤醒取决于优先级和调度策略
         return pthread_cond_broadcast(&m_cond) == 0;
     }
 

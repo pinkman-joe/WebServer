@@ -15,6 +15,7 @@ public:
     /*thread_number是线程池中线程的数量，max_requests是请求队列中最多允许的、等待处理的请求的数量*/
     threadpool(int actor_model, connection_pool *connPool, int thread_number = 8, int max_request = 10000);
     ~threadpool();
+    //往请求队列中添加任务
     bool append(T *request, int state);
     bool append_p(T *request);
 
@@ -29,7 +30,7 @@ private:
     pthread_t *m_threads;       //描述线程池的数组，其大小为m_thread_number
     std::list<T *> m_workqueue; //请求队列
     locker m_queuelocker;       //保护请求队列的互斥锁
-    sem m_queuestat;            //是否有任务需要处理
+    sem m_queuestat;            //信号量，是否有任务需要处理
     connection_pool *m_connPool;  //数据库
     int m_actor_model;          //模型切换
 };
@@ -63,7 +64,7 @@ threadpool<T>::~threadpool()
 template <typename T>
 bool threadpool<T>::append(T *request, int state)
 {
-    m_queuelocker.lock();
+    m_queuelocker.lock();//操作工作队列一定加锁，因为它被所有线程共享
     if (m_workqueue.size() >= m_max_requests)
     {
         m_queuelocker.unlock();
@@ -72,7 +73,7 @@ bool threadpool<T>::append(T *request, int state)
     request->m_state = state;
     m_workqueue.push_back(request);
     m_queuelocker.unlock();
-    m_queuestat.post();
+    m_queuestat.post();//信号量-1
     return true;
 }
 template <typename T>
@@ -92,7 +93,7 @@ bool threadpool<T>::append_p(T *request)
 template <typename T>
 void *threadpool<T>::worker(void *arg)
 {
-    threadpool *pool = (threadpool *)arg;
+    threadpool *pool = (threadpool *)arg;//传入的arg是this指针
     pool->run();
     return pool;
 }
@@ -101,7 +102,7 @@ void threadpool<T>::run()
 {
     while (true)
     {
-        m_queuestat.wait();
+        m_queuestat.wait();//没有信号处理就阻塞在这里
         m_queuelocker.lock();
         if (m_workqueue.empty())
         {

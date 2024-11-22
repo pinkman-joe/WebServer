@@ -1,0 +1,174 @@
+2024-11-19 14:28:55.948765 [info]: timer tick
+2024-11-19 14:29:00.948852 [info]: timer tick
+2024-11-19 14:29:05.949578 [info]: timer tick
+2024-11-19 14:29:10.950321 [info]: timer tick
+2024-11-19 14:29:12.026802 [info]: deal with the client(192.168.31.233)
+2024-11-19 14:29:12.026862 [info]: adjust timer once
+2024-11-19 14:29:12.027026 [info]: GET / HTTP/1.1
+2024-11-19 14:29:12.027053 [info]: Host: 192.168.31.100:9006
+2024-11-19 14:29:12.027064 [info]: Connection: keep-alive
+2024-11-19 14:29:12.027072 [info]: Upgrade-Insecure-Requests: 1
+2024-11-19 14:29:12.027080 [info]: oop!unknow header: Upgrade-Insecure-Requests: 1
+2024-11-19 14:29:12.027088 [info]: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2024-11-19 14:29:12.027095 [info]: oop!unknow header: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0
+2024-11-19 14:29:12.027103 [info]: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-19 14:29:12.027110 [info]: oop!unknow header: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+2024-11-19 14:29:12.027119 [info]: Accept-Encoding: gzip, deflate
+2024-11-19 14:29:12.027127 [info]: oop!unknow header: Accept-Encoding: gzip, deflate
+2024-11-19 14:29:12.027135 [info]: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-19 14:29:12.027143 [info]: oop!unknow header: Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+2024-11-19 14:29:12.027150 [info]: 
+2024-11-19 14:29:12.027183 [info]: request:HTTP/1.1 200 OK
+
+2024-11-19 14:29:12.027224 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+
+2024-11-19 14:29:12.027234 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+2024-11-19 14:29:12.027242 [info]: request:HTTP/1.1 200 OK
+Content-Length:586
+Connection:keep-alive
+
+
+2024-11-19 14:29:12.027559 [info]: send data to the client(192.168.31.233)
+2024-11-19 14:29:12.027586 [info]: adjust timer once
+2024-11-19 14:29:15.951503 [info]: timer tick
+2024-11-19 14:29:20.952537 [info]: timer tick
+2024-11-19 14:29:25.953562 [info]: timer tick
+2024-11-19 14:29:30.954081 [info]: timer tick
+2024-11-19 14:29:35.954276 [info]: timer tick
+2024-11-19 14:29:40.954599 [info]: timer tick
+2024-11-19 14:29:45.955196 [info]: timer tick
+2024-11-19 14:29:50.956020 [info]: timer tick
+2024-11-19 14:29:55.956769 [info]: timer tick
+2024-11-19 14:30:00.957332 [info]: timer tick
+2024-11-19 14:30:05.957686 [info]: timer tick
+2024-11-19 14:30:10.958726 [info]: timer tick
+2024-11-19 14:30:15.958930 [info]: timer tick
+2024-11-19 14:30:20.959953 [info]: timer tick
+2024-11-19 14:30:25.960995 [info]: timer tick
+2024-11-19 14:30:30.961154 [info]: timer tick
+2024-11-19 14:30:35.961392 [info]: timer tick
+2024-11-19 14:30:40.962127 [info]: timer tick
+2024-11-19 14:30:45.962856 [info]: timer tick
+2024-11-19 14:30:50.963115 [info]: timer tick
+2024-11-19 14:30:55.963651 [info]: timer tick
+2024-11-19 14:31:00.963933 [info]: timer tick
+2024-11-19 14:31:05.964284 [info]: timer tick
+2024-11-19 14:31:10.965087 [info]: timer tick
+2024-11-19 14:31:15.965639 [info]: timer tick
+2024-11-19 14:31:20.965791 [info]: timer tick
+2024-11-19 14:31:25.966024 [info]: timer tick
+2024-11-19 14:31:30.966431 [info]: timer tick
+2024-11-19 14:31:35.967057 [info]: timer tick
+2024-11-19 14:31:40.967246 [info]: timer tick
+2024-11-19 14:31:45.967324 [info]: timer tick
+2024-11-19 14:31:50.967514 [info]: timer tick
+2024-11-19 14:31:55.968306 [info]: timer tick
+2024-11-19 14:32:00.968602 [info]: timer tick
+2024-11-19 14:32:05.969329 [info]: timer tick
+2024-11-19 14:32:10.969688 [info]: timer tick
+2024-11-19 14:32:15.970093 [info]: timer tick
+2024-11-19 14:32:20.970675 [info]: timer tick
+2024-11-19 14:32:25.971224 [info]: timer tick
+2024-11-19 14:32:30.972426 [info]: timer tick
+2024-11-19 14:32:35.972900 [info]: timer tick
+2024-11-19 14:32:40.973130 [info]: timer tick
+2024-11-19 14:32:45.973521 [info]: timer tick
+2024-11-19 14:32:50.994103 [info]: timer tick
+2024-11-19 14:32:55.994436 [info]: timer tick
+2024-11-19 14:33:00.994536 [info]: timer tick
+2024-11-19 14:33:05.994693 [info]: timer tick
+2024-11-19 14:33:10.995276 [info]: timer tick
+2024-11-19 14:33:15.995668 [info]: timer tick
+2024-11-19 14:33:20.995855 [info]: timer tick
+2024-11-19 14:33:25.996333 [info]: timer tick
+2024-11-19 14:33:30.996571 [info]: timer tick
+2024-11-19 14:33:35.996895 [info]: timer tick
+2024-11-19 14:33:40.997324 [info]: timer tick
+2024-11-19 14:33:45.997707 [info]: timer tick
+2024-11-19 14:34:22.027491 [info]: timer tick
+2024-11-19 14:53:02.053435 [info]: timer tick
+2024-11-19 14:53:07.056822 [info]: timer tick
+2024-11-19 14:53:12.362133 [info]: timer tick
+2024-11-19 14:53:17.373929 [info]: timer tick
+2024-11-19 14:53:22.380544 [info]: timer tick
+2024-11-19 14:53:27.381790 [info]: timer tick
+2024-11-19 14:53:32.393290 [info]: timer tick
+2024-11-19 14:53:37.394067 [info]: timer tick
+2024-11-19 14:53:42.401282 [info]: timer tick
+2024-11-19 14:53:47.415041 [info]: timer tick
+2024-11-19 14:53:52.420298 [info]: timer tick
+2024-11-19 14:53:57.424603 [info]: timer tick
+2024-11-19 14:54:02.434174 [info]: timer tick
+2024-11-19 14:54:07.440419 [info]: timer tick
+2024-11-19 14:54:12.447258 [info]: timer tick
+2024-11-19 14:54:17.448041 [info]: timer tick
+2024-11-19 14:54:22.453290 [info]: timer tick
+2024-11-19 14:54:27.461718 [info]: timer tick
+2024-11-19 14:54:32.466714 [info]: timer tick
+2024-11-19 14:54:37.479180 [info]: timer tick
+2024-11-19 14:54:42.492320 [info]: timer tick
+2024-11-19 14:54:47.493415 [info]: timer tick
+2024-11-19 14:54:52.502290 [info]: timer tick
+2024-11-19 14:54:57.513746 [info]: timer tick
+2024-11-19 14:55:02.520520 [info]: timer tick
+2024-11-19 14:55:07.522142 [info]: timer tick
+2024-11-19 14:55:12.532055 [info]: timer tick
+2024-11-19 14:55:17.533848 [info]: timer tick
+2024-11-19 14:55:22.539043 [info]: timer tick
+2024-11-19 14:55:27.552987 [info]: timer tick
+2024-11-19 14:55:32.557796 [info]: timer tick
+2024-11-19 14:55:37.564520 [info]: timer tick
+2024-11-19 14:55:42.573212 [info]: timer tick
+2024-11-19 14:55:47.582381 [info]: timer tick
+2024-11-19 14:55:52.596576 [info]: timer tick
+2024-11-19 14:55:57.610953 [info]: timer tick
+2024-11-19 14:56:02.624589 [info]: timer tick
+2024-11-19 14:56:07.636255 [info]: timer tick
+2024-11-19 14:56:12.648291 [info]: timer tick
+2024-11-19 14:56:17.655917 [info]: timer tick
+2024-11-19 14:56:22.666399 [info]: timer tick
+2024-11-19 14:56:27.681158 [info]: timer tick
+2024-11-19 14:56:32.689261 [info]: timer tick
+2024-11-19 14:56:37.690423 [info]: timer tick
+2024-11-19 14:56:42.690550 [info]: timer tick
+2024-11-19 14:56:47.692121 [info]: timer tick
+2024-11-19 14:56:52.707119 [info]: timer tick
+2024-11-19 14:56:57.707501 [info]: timer tick
+2024-11-19 14:57:02.707602 [info]: timer tick
+2024-11-19 14:57:07.708491 [info]: timer tick
+2024-11-19 14:57:12.708594 [info]: timer tick
+2024-11-19 14:57:17.709540 [info]: timer tick
+2024-11-19 14:57:22.710513 [info]: timer tick
+2024-11-19 14:57:27.710922 [info]: timer tick
+2024-11-19 14:57:32.711068 [info]: timer tick
+2024-11-19 14:57:37.711348 [info]: timer tick
+2024-11-19 14:57:42.712296 [info]: timer tick
+2024-11-19 14:57:47.712353 [info]: timer tick
+2024-11-19 14:57:52.712929 [info]: timer tick
+2024-11-19 14:57:57.728312 [info]: timer tick
+2024-11-19 14:58:02.731878 [info]: timer tick
+2024-11-19 14:58:07.740172 [info]: timer tick
+2024-11-19 14:58:12.740245 [info]: timer tick
+2024-11-19 14:58:17.751851 [info]: timer tick
+2024-11-19 14:58:22.753344 [info]: timer tick
+2024-11-19 14:58:27.762356 [info]: timer tick
+2024-11-19 14:58:32.763874 [info]: timer tick
+2024-11-19 14:58:37.772695 [info]: timer tick
+2024-11-19 14:58:42.779876 [info]: timer tick
+2024-11-19 14:58:47.791331 [info]: timer tick
+2024-11-19 14:58:52.794345 [info]: timer tick
+2024-11-19 14:58:57.798967 [info]: timer tick
+2024-11-19 14:59:02.810075 [info]: timer tick
+2024-11-19 14:59:07.822840 [info]: timer tick
+2024-11-19 14:59:12.827627 [info]: timer tick
+2024-11-19 14:59:17.838322 [info]: timer tick
+2024-11-19 16:17:35.299897 [info]: timer tick
+2024-11-19 16:17:40.310106 [info]: timer tick
+2024-11-19 16:17:45.310344 [info]: timer tick
+2024-11-19 16:17:50.321061 [info]: timer tick
+2024-11-19 16:17:55.329248 [info]: timer tick
+2024-11-19 16:18:00.340543 [info]: timer tick

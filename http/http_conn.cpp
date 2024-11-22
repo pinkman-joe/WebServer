@@ -17,11 +17,12 @@ const char *error_500_form = "There was an unusual problem serving the request f
 locker m_lock;
 map<string, string> users;
 
-void http_conn::initmysql_result(connection_pool *connPool)
+//获取user表的用户名密码
+void http_conn::initmysql_result(connection_pool *connPool) 
 {
     //先从连接池中取一个连接
     MYSQL *mysql = NULL;
-    connectionRAII mysqlcon(&mysql, connPool);
+    connectionRAII mysqlcon(&mysql, connPool); 
 
     //在user表中检索username，passwd数据，浏览器端输入
     if (mysql_query(mysql, "SELECT username,passwd FROM user"))
@@ -50,9 +51,9 @@ void http_conn::initmysql_result(connection_pool *connPool)
 //对文件描述符设置非阻塞
 int setnonblocking(int fd)
 {
-    int old_option = fcntl(fd, F_GETFL);
+    int old_option = fcntl(fd, F_GETFL); //返回fd的状态标志
     int new_option = old_option | O_NONBLOCK;
-    fcntl(fd, F_SETFL, new_option);
+    fcntl(fd, F_SETFL, new_option);   //设置状态标志
     return old_option;
 }
 
@@ -167,21 +168,21 @@ http_conn::LINE_STATUS http_conn::parse_line()
     for (; m_checked_idx < m_read_idx; ++m_checked_idx)
     {
         temp = m_read_buf[m_checked_idx];
-        if (temp == '\r')
+        if (temp == '\r') //可能读取到一个完整的行末尾
         {
-            if ((m_checked_idx + 1) == m_read_idx)
+            if ((m_checked_idx + 1) == m_read_idx)//\r是左后一个用户数据，缺少\n，说明行数据不够，还要继续读取
                 return LINE_OPEN;
-            else if (m_read_buf[m_checked_idx + 1] == '\n')
+            else if (m_read_buf[m_checked_idx + 1] == '\n')// \r\n，行结束
             {
-                m_read_buf[m_checked_idx++] = '\0';
-                m_read_buf[m_checked_idx++] = '\0';
+                m_read_buf[m_checked_idx++] = '\0';//替换 \r
+                m_read_buf[m_checked_idx++] = '\0';//替换\n
                 return LINE_OK;
             }
-            return LINE_BAD;
+            return LINE_BAD; //行格式有问题
         }
         else if (temp == '\n')
         {
-            if (m_checked_idx > 1 && m_read_buf[m_checked_idx - 1] == '\r')
+            if (m_checked_idx > 1 && m_read_buf[m_checked_idx - 1] == '\r') //读取到完整行结束
             {
                 m_read_buf[m_checked_idx - 1] = '\0';
                 m_read_buf[m_checked_idx++] = '\0';
@@ -241,14 +242,14 @@ bool http_conn::read_once()
 //解析http请求行，获得请求方法，目标url及http版本号
 http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
 {
-    m_url = strpbrk(text, " \t");
+    m_url = strpbrk(text, " \t"); //寻找第一个空格或制表符\t，是方法与url之间的分隔符
     if (!m_url)
     {
         return BAD_REQUEST;
     }
-    *m_url++ = '\0';
+    *m_url++ = '\0'; //将空格替换为字符串结束符 \0 ,m_url指向url起始位置
     char *method = text;
-    if (strcasecmp(method, "GET") == 0)
+    if (strcasecmp(method, "GET") == 0) //因为中间插入了\0，所以只会比较方法部分
         m_method = GET;
     else if (strcasecmp(method, "POST") == 0)
     {
@@ -258,16 +259,16 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
     else
         return BAD_REQUEST;
     m_url += strspn(m_url, " \t");
-    m_version = strpbrk(m_url, " \t");
+    m_version = strpbrk(m_url, " \t"); //找到url和版本号之间的空格和制表符
     if (!m_version)
         return BAD_REQUEST;
     *m_version++ = '\0';
     m_version += strspn(m_version, " \t");
     if (strcasecmp(m_version, "HTTP/1.1") != 0)
         return BAD_REQUEST;
-    if (strncasecmp(m_url, "http://", 7) == 0)
+    if (strncasecmp(m_url, "http://", 7) == 0)//比较前七个字符
     {
-        m_url += 7;
+        m_url += 7; //跳过 "http://" 部分
         m_url = strchr(m_url, '/');
     }
 
@@ -277,13 +278,14 @@ http_conn::HTTP_CODE http_conn::parse_request_line(char *text)
         m_url = strchr(m_url, '/');
     }
 
-    if (!m_url || m_url[0] != '/')
+    if (!m_url || m_url[0] != '/')//合法的URL路径一定以 / 开头
         return BAD_REQUEST;
     //当url为/时，显示判断界面
     if (strlen(m_url) == 1)
         strcat(m_url, "judge.html");
+    //HTTP请求行处理完毕，状态转移到头部字段的分析
     m_check_state = CHECK_STATE_HEADER;
-    return NO_REQUEST;
+    return NO_REQUEST;//需要继续读取，还有头部信息
 }
 
 //解析http请求的一个头部信息
@@ -291,12 +293,12 @@ http_conn::HTTP_CODE http_conn::parse_headers(char *text)
 {
     if (text[0] == '\0')
     {
-        if (m_content_length != 0)
+        if (m_content_length != 0) //消息体不为空
         {
             m_check_state = CHECK_STATE_CONTENT;
-            return NO_REQUEST;
+            return NO_REQUEST; //表示请求不完整，还要消息体，要继续读取
         }
-        return GET_REQUEST;
+        return GET_REQUEST; //获得了一个完整的客户请求
     }
     else if (strncasecmp(text, "Connection:", 11) == 0)
     {
@@ -304,40 +306,41 @@ http_conn::HTTP_CODE http_conn::parse_headers(char *text)
         text += strspn(text, " \t");
         if (strcasecmp(text, "keep-alive") == 0)
         {
-            m_linger = true;
+            m_linger = true;//持续连接
         }
     }
     else if (strncasecmp(text, "Content-length:", 15) == 0)
     {
         text += 15;
         text += strspn(text, " \t");
-        m_content_length = atol(text);
+        m_content_length = atol(text); //将字段值转换为长整数，存储到 m_content_length 中
     }
     else if (strncasecmp(text, "Host:", 5) == 0)
     {
         text += 5;
         text += strspn(text, " \t");
-        m_host = text;
+        m_host = text; //存储主机地址
     }
     else
     {
         LOG_INFO("oop!unknow header: %s", text);
     }
-    return NO_REQUEST;
+    return NO_REQUEST; //解析尚未完成
 }
 
 //判断http请求是否被完整读入
 http_conn::HTTP_CODE http_conn::parse_content(char *text)
 {
-    if (m_read_idx >= (m_content_length + m_checked_idx))
+    if (m_read_idx >= (m_content_length + m_checked_idx))//请求头解析完成
     {
         text[m_content_length] = '\0';
         //POST请求中最后为输入的用户名和密码
         m_string = text;
-        return GET_REQUEST;
+        return GET_REQUEST; //完成解析
     }
-    return NO_REQUEST;
+    return NO_REQUEST; //尚未完成解析
 }
+
 
 http_conn::HTTP_CODE http_conn::process_read()
 {
@@ -364,7 +367,7 @@ http_conn::HTTP_CODE http_conn::process_read()
             ret = parse_headers(text);
             if (ret == BAD_REQUEST)
                 return BAD_REQUEST;
-            else if (ret == GET_REQUEST)
+            else if (ret == GET_REQUEST) //解析完成且请求不包含消息体，调用 do_request 执行业务逻辑
             {
                 return do_request();
             }
@@ -385,12 +388,13 @@ http_conn::HTTP_CODE http_conn::process_read()
     return NO_REQUEST;
 }
 
+//负责处理客户端的 HTTP 请求,登录/注册/资源请求
 http_conn::HTTP_CODE http_conn::do_request()
 {
     strcpy(m_real_file, doc_root);
     int len = strlen(doc_root);
     //printf("m_url:%s\n", m_url);
-    const char *p = strrchr(m_url, '/');
+    const char *p = strrchr(m_url, '/');//查找 m_url 中最后一个 '/' 的位置
 
     //处理cgi
     if (cgi == 1 && (*(p + 1) == '2' || *(p + 1) == '3'))
@@ -513,6 +517,8 @@ http_conn::HTTP_CODE http_conn::do_request()
     close(fd);
     return FILE_REQUEST;
 }
+
+//解除内存映射
 void http_conn::unmap()
 {
     if (m_file_address)
@@ -521,6 +527,8 @@ void http_conn::unmap()
         m_file_address = 0;
     }
 }
+
+//将 HTTP 响应写入客户端 socket
 bool http_conn::write()
 {
     int temp = 0;
@@ -578,6 +586,8 @@ bool http_conn::write()
         }
     }
 }
+
+
 bool http_conn::add_response(const char *format, ...)
 {
     if (m_write_idx >= WRITE_BUFFER_SIZE)
